@@ -10,7 +10,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="width=device-width" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link href="img/010.png" rel="icon" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="css/bootstrap-light.css" rel="stylesheet">
 	<link id="pagestyle" href="css/theme-light.css" rel="stylesheet">
@@ -40,10 +40,8 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="#home">home</a></li>
-					<li><a href="#products">products</a></li>
+					<li><a href="#products">divisions</a></li>
 					<li><a href="#about">about us</a></li>
-					<li><a href="#special">special</a></li>
-					<li><a href="#testimonials">testimonials</a></li>
 					<li><a href="#contact">contact</a></li>
 				</ul>
 			</div>
@@ -55,16 +53,16 @@
 	<section class="home section image-slider" id="home">
 		<div class="home-slider text-center">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background: url(img/slider/slide2.jpg);">
-					<h1>Best <span class="hglight">Shop</span></h1>
-					<h2 class="home-slider-title-main">with working cart & pay pal</h2>
+				<div class="swiper-slide" style="background: url(img/023.jpg);">
+					<h1>Shop <span class="hglight">for Scrap</span></h1>
+					<h2 class="home-slider-title-main"> </h2>
 					<div class="home-buttons text-center"> <a href="#products" class="btn btn-lg  btn-primary">our products</a> </div>
 					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
 				</div>
 
-				<div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
+				<div class="swiper-slide" style="background: url(img/025.webp);">
 					<h1>Sell <span class="hglight">shop</span></h1>
-					<h2 class="home-slider-title-main">52% Discount for this season </h2>
+					<h2 class="home-slider-title-main">  </h2>
 					<div class="home-buttons text-center"> <a href="#products" class="btn btn-lg  btn-primary">our products</a> </div>
 					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
 				</div>
@@ -75,233 +73,59 @@
 		</div>
 	</section>	
 	<!--/ slider -->
-	
-	<!-- cart section -->
-	<span id="items-counter" class="h3 cart-items-counter" style="display: none">0</span>
-	<div class="cart-widget-container">
-		<div class="cart-widget text-center">
-			<a class="close" id="cart-widget-close">
-				<span class="ti-close"></span>
-			</a>
-			<h1>Best<span class="hglight">shop</span></h1>
-			<h3 class="section-heading">Your cart</h3>
-			<div id="cart-empty" class="cart-empty"><h4>is empty <span class="ti-face-sad icon"></span> </h4></div>
-			<!-- container for js inject cart items content -->
-			<div class="items-container" id="items"></div>
-			<!-- container for js inject cart items content -->
-
-			<div class="cart-delivery" id="cart-delivery">
-				<h4 class="section-heading">Delivery option</h4>
-				<div class="custom-radio">
-					<input id="radio1" type="radio" name="delivery" value="10.00" checked> 
-					<label for="radio1">domestic delivery ($10)</label>
-				</div>
-
-				<div class="custom-radio">
-					<input id="radio2" type="radio" name="delivery" value="15.00"> 
-					<label for="radio2">express domestic delivery ($15) </label>
-				</div>
-
-				<div class="custom-radio">
-					<input id="radio3" type="radio" name="delivery" value="20.00"> 
-					<label for="radio3">worldwide delivery ($20)</label>
-				</div>
-			</div>
-			<div class="cart-summary" id="cart-summary">
-				<h4 class="section-heading">summary</h4>
-				<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">$<span id="cost_value">0.00</span></span></div>
-				<div class="cart-summary-row">Shipping <span class="cart-value">$<span id="cost_delivery"></span></span></div>
-				<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">$<span id="total-total"></span></span></div>
-			</div>
-
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="cart-form" id="cart-form">
-				<!-- Identify your business so that you can collect the payments. -->
-				<input type="hidden" name="business" value="yourpaypal@email.com">
-				<!-- Specify a Buy Now button. -->
-				<input type="hidden" name="cmd" value="_xclick">
-				<!-- Specify details about the item that buyers will purchase. -->
-				<input type="hidden" name="item_name" value="Bestshop shop - checkout">
-				<input type="hidden" name="amount" id="amount" value="">
-				<input type="hidden" name="currency_code" value="USD">
-				<!-- Display the payment button. -->
-				<button type="submit" name="submit" class="btn btn-default btn-lg">
-				pay pal checkout <span class="ti-arrow-right"></span>
-				</button>
-			</form>
-		</div>
-		<div class="cart-widget-close-overlay"></div>
-	</div>
-	<!--/ cart section end -->
-	
-	<!-- Catalog area -->
-	<div class="catalog-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-heading">PRODUCT CATEGORIES</h3>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
-					<div class="add-area">
-						<a href="#">
-							<div class="effect-add">
-								<img class="img-responsive" alt=" " src="img/add3.png">
-								<h2>Footerwear</h2>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-					<div class="add-area">
-						<a href="#">
-							<div class="effect-add">
-								<img class="img-responsive" alt=" " src="img/add1.png">
-								<h2>Women</h2>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
-					<div class="add-area">
-						<a href="#">
-							<div class="effect-add">
-								<img class="img-responsive" alt=" " src="img/add2.png">
-								<h2>Bags</h2>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ Catalog area -->
-	
+		
 	<!-- products area -->	
 	<section class="section-min section product" id="products">
 		<div class="container overflow-hidden">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="section-heading">Featured Products</h3>
+					<h3 class="section-heading">DIVISIONS</h3>
 				</div>
 				<div class="col-md-12">
 					<div class="product-list-sliderd">
 						<ul class="swiper-wrappers product-list product-list-vertical">
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
-							    	<span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p1.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p2.jpg">
+									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/028.jpg"> 
+									<img alt="product image" class="product-list-secondary-img" src="img/028.jpg">
 									</a>
 								</span> 
 
 								<a href="#" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Winter Long Sleeve Black White </span>
-										<span class="product-list-price">$400.00</span>
-										<span class="product-list-price sell-p"><del>$580.00</del></span>
+										<span class="product-list-name h4 black-color">Generation </span>
 									</span>
 								</a> 
 
-								<button class="btn btn-default add-item" type="button" data-image="img/p1.jpg" data-name="Winter Long Sleeve Black White " data-cost="400.00" data-id="1" >
-									add to cart
-								</button> 		
+										
 							</li>
-							
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p3.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p4.jpg">
+									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/030.jpg"> 
+									<img alt="product image" class="product-list-secondary-img" src="img/030.jpg">
 									</a>
 								</span> 
 
 								<a href="#" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">women totes lady handbag</span>
-										<span class="product-list-price">$300.00</span>
-									</span>
-								</a>
-
-								<button class="btn btn-default add-item" type="button" data-image="img/p3.jpg" data-name="women totes lady handbag" data-cost="300.00" data-id="2" >
-									add to cart
-								</button> 	
-							</li>
-
-							<li class="swiper-slidess text-center"> 
-								<span class="product-list-left pull-left">
-							    	<span class="sale-p new-p">new</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p5.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p6.jpg">
-									</a>
-								</span> 
-
-								<a href="#" data-target="#product-01" data-toggle="modal">
-									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Lace water soluble sexy dress</span>
-										<span class="product-list-price">$600.00</span>
+										<span class="product-list-name h4 black-color">Transmission</span>
 									</span>
 								</a> 
-
-								<button class="btn btn-default add-item" type="button" data-image="img/p5.jpg" data-name="Lace water soluble sexy dress" data-cost="600.00" data-id="3" >
-									add to cart
-								</button> 		
-							</li>
-							
-							<li class="swiper-slidess  text-center" > 
-								<span class="product-list-left pull-left">
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p7.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p8.jpg">
-									</a>
-								</span> 
-
-								<a href="#" data-target="#product-01" data-toggle="modal">
-									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Elegant Formal Party Dress</span>
-										<span class="product-list-price">$500.00</span>
-									</span>
-								</a>
-
-								<button class="btn btn-default add-item" type="button" data-image="img/p7.jpg" data-name="Elegant Formal Party Dress" data-cost="500.00" data-id="4" >
-									add to cart
-								</button> 	
-							</li>
-
-							<li class="swiper-slidess text-center"> 
-								<span class="product-list-left pull-left">
-								    <span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p9.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p10.jpg">
-									</a>
-								</span> 
-
-								<a href="#" data-target="#product-01" data-toggle="modal">
-									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Mini Dress Ladies Sleeve</span>
-										<span class="product-list-price">$600.00</span>
-										<span class="product-list-price sell-p"><del>$700.00</del></span>
-									</span>
-								</a> 
-
-								<button class="btn btn-default add-item" type="button" data-image="img/p9.jpg" data-name="Mini Dress Ladies Sleeve" data-cost="600.00" data-id="5" >
-									add to cart
-								</button> 		
-							</li>
 							
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p1.jpg"> 
-									<img alt="product image" class="product-list-secondary-img" src="img/p2.jpg">
+									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/031.jpg"> 
+									<img alt="product image" class="product-list-secondary-img" src="img/031.jpg">
 									</a>
 								</span> 
 
 								<a href="#" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Winter Long Sleeve Black White </span>
-										<span class="product-list-price">$500.00</span>
+										<span class="product-list-name h4 black-color">Distribution</span>
 									</span>
 								</a>
 
-								<button class="btn btn-default add-item" type="button" data-image="img/p1.jpg" data-name="Winter Long Sleeve Black White " data-cost="500.00" data-id="6" >
-									add to cart
-								</button> 	
+							</li>		
 							</li>
 						</ul>
 					</div>				
@@ -309,7 +133,7 @@
 				
 				<div class="new-products-area">			
 					<div class="col-md-12">
-						<h3 class="section-heading">New Products</h3>
+						<h3 class="section-heading">Today's Special</h3>
 					</div>
 					<div class="col-md-12">
 						<div class="product-list-slider">
@@ -317,119 +141,112 @@
 								<li class="swiper-slide text-center"> 
 									<span class="product-list-left pull-left">
 										<span class="sale-p">sale</span>
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p1.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p2.jpg">
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/020.png"> 
+										<img alt="product image" class="product-list-secondary-img" src="img/020.png">
 										</a>
 									</span> 
 
 									<a href="#" data-target="#product-01" data-toggle="modal">
 										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">women white backless mini</span>
-											<span class="product-list-price">$400.00</span>
-											<span class="product-list-price sell-p"><del>$580.00</del></span>
-										</span>
+											<span class="product-list-name h4 black-color">Boxes</span>
+											</span>
 									</a> 
 
-									<button class="btn btn-default add-item" type="button" data-image="img/p1.jpg" data-name="women white backless mini" data-cost="400.00" data-id="1" >
-										add to cart
+									<button class="btn btn-default add-item" type="button" data-image="img/020.png" data-name="Boxes" data-id="1" >
 									</button> 		
 								</li>
 								
 								<li class="swiper-slide text-center"> 
 									<span class="product-list-left pull-left">
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p3.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p4.jpg">
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/018.png"> 
+										<img alt="product image" class="product-list-secondary-img" src="img/018.png">
 										</a>
 									</span> 
 
 									<a href="#" data-target="#product-01" data-toggle="modal">
 										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">women totes lady handbag</span>
-											<span class="product-list-price">$300.00</span>
+											<span class="product-list-name h4 black-color">Computer Accessories</span>
 										</span>
 									</a>
 
-									<button class="btn btn-default add-item" type="button" data-image="img/p3.jpg" data-name=" women totes lady handbag" data-cost="300.00" data-id="2" >
-										add to cart
-									</button> 	
-								</li>
-
-								<li class="swiper-slide text-center"> 
-									<span class="product-list-left pull-left">
-										<span class="sale-p new-p">new</span>
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p5.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p6.jpg">
-										</a>
-									</span> 
-
-									<a href="#" data-target="#product-01" data-toggle="modal">
-										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">Sexy Women Floral Embroidery</span>
-											<span class="product-list-price">$600.00</span>
-										</span>
-									</a> 
-
-									<button class="btn btn-default add-item" type="button" data-image="img/p5.jpg" data-name="Sexy Women Floral Embroidery" data-cost="600.00" data-id="3" >
-										add to cart
-									</button> 		
-								</li>
-								
-								<li class="swiper-slide  text-center" > 
-									<span class="product-list-left pull-left">
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p7.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p8.jpg">
-										</a>
-									</span> 
-
-									<a href="#" data-target="#product-01" data-toggle="modal">
-										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">Elegant Formal Party Dress</span>
-											<span class="product-list-price">$500.00</span>
-										</span>
-									</a>
-
-									<button class="btn btn-default add-item" type="button" data-image="img/p7.jpg" data-name="Elegant Formal Party Dress" data-cost="500.00" data-id="4" >
-										add to cart
+									<button class="btn btn-default add-item" type="button" data-image="img/018.png" data-name="Computer Accessories" data-id="2" >
 									</button> 	
 								</li>
 
 								<li class="swiper-slide text-center"> 
 									<span class="product-list-left pull-left">
 										<span class="sale-p">sale</span>
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p9.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p10.jpg">
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/008.jpg"> 
+										<img alt="product image" class="product-list-secondary-img" src="008.jpg">
+										</a>
+									</span> 
+
+									
+									<a href="#" data-target="#product-01" data-toggle="modal">
+										<span class="product-list-right pull-left">
+											<span class="product-list-name h4 black-color">Cables</span>
+										</span>
+									</a> 
+									<button class="btn btn-default add-item" type="button" data-image="img/008.jpg" data-name="Cables" data-id="3" >
+										
+									</button> 		
+								</li>
+								
+								<li class="swiper-slide  text-center" > 
+									<span class="product-list-left pull-left">
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/027.jpg"> 
+										<img alt="product image" class="product-list-secondary-img" src="img/027.jpg">
 										</a>
 									</span> 
 
 									<a href="#" data-target="#product-01" data-toggle="modal">
 										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">Mini Dress Ladies Sleeve</span>
-											<span class="product-list-price">$600.00</span>
-											<span class="product-list-price sell-p"><del>$700.00</del></span>
+											<span class="product-list-name h4 black-color">Office Equipment</span>
+											
+										</span>
+									</a>
+
+									<button class="btn btn-default add-item" type="button" data-image="img/027.jpg" data-name="Office Equipment" data-id="4" >
+										
+									</button> 	
+								</li>
+
+								<li class="swiper-slide text-center"> 
+									<span class="product-list-left pull-left">
+										<span class="sale-p">sale</span>
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/011.jpg"> 
+										<img alt="product image" class="product-list-secondary-img" src="img/011.jpg">
+										</a>
+									</span> 
+
+									<a href="#" data-target="#product-01" data-toggle="modal">
+										<span class="product-list-right pull-left">
+											<span class="product-list-name h4 black-color">Scrap</span>
+											
 										</span>
 									</a> 
 
-									<button class="btn btn-default add-item" type="button" data-image="img/p9.jpg" data-name="Mini Dress Ladies Sleeve" data-cost="600.00" data-id="5" >
-										add to cart
+									<button class="btn btn-default add-item" type="button" data-image="img/011.jpg" data-name="Scrap" data-id="5" >
+										
 									</button> 		
 								</li>
 								
 								<li class="swiper-slide text-center"> 
 									<span class="product-list-left pull-left">
-										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/p1.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p2.jpg">
+										<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/013.png"> 
+										<img alt="product image" class="product-list-secondary-img" src="img/013.png">
 										</a>
 									</span> 
 
 									<a href="#" data-target="#product-01" data-toggle="modal">
 										<span class="product-list-right pull-left">
-											<span class="product-list-name h4 black-color">Winter Long Sleeve Black White </span>
-											<span class="product-list-price">$500.00</span>
+											<span class="product-list-name h4 black-color">Used Oil</span>
+											
 										</span>
 									</a>
 
-									<button class="btn btn-default add-item" type="button" data-image="img/p1.jpg" data-name="Winter Long Sleeve Black White" data-cost="500.00" data-id="6" >
-										add to cart
+									<button class="btn btn-default add-item" type="button" data-image="img/013.png" data-name="Used oil" data-cost="500.00" data-id="6" >
+									
 									</button> 	
 								</li>
 							</ul>
@@ -525,15 +342,16 @@
 		<!-- / PRODUCT MODAL -->
 	</section>
 	<!--/ products area end -->	
-	
+
+		
 	<!-- About area -->	
 	<section class="about white-color" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h4>Why should customers choose</h4>
+					<h4>How it works?</h4>
 					<h2> <span>our</span> products</h2>
-					<p>Lorem ipsum dolor sit amet  eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio ex eatikre commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuor. Excepteur sint occaecat cupidataproident, sunt in culpa qui officiad est laboincididunt ut labore et dolore magna aliqua.  eiusmeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Interested in re-using, recycling, or making something valuable out of “waste”? Register your profile, find the waste you need, identify its location, reserve it in a cart, make a payment or reserve for pick up (free waste), and collect it. </p>
 					<div class="read-more-btn">
 						<a href="#">read more</a>
 					</div>
@@ -542,135 +360,6 @@
 		</div>
 	</section>
 	<!--/ About area end-->	
-	
-	<!-- Special area -->	
-	<section class="countdown" id="special">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-heading">Summer Sale</h3>
-				</div>
-				<div class="col-md-7">
-					<div class="countdown-container">
-						<h3>Sexy Women Floral Embroidery</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						<!-- data in countdown ul from js -->
-						<ul id="countdown" class="countdown-counter"></ul>
-						<!-- data in countdown ul from js --><span class="countdown-price h3">$420.00 <del>$670.00</del></span>
-						<button class="btn btn-default add-item" type="button" data-image="img/p7.jpg" data-name="Sexy Women Floral Embroidery" data-cost="420.00" data-id="9">
-							add to cart
-						</button>
-					</div>
-				</div>
-				<div class="col-md-5">
-					<ul class="product-list product-list-vertical">
-						<li>
-							<span class="product-list-left pull-left">
-							       <span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal">
-										<img alt="product image" class="product-list-primary-img" src="img/p7.jpg"> 
-										<img alt="product image" class="product-list-secondary-img" src="img/p9.jpg">
-									</a>
-							</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ Special area end-->	
-	
-	<!-- Testimonials area -->	
-	<section class="testimonials" id="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-heading">Testimonials</h3>
-				</div>
-				<div class="testimonials-slider text-center col-md-12">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user2.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
-					</div>
-					<div class="testimonials-pagination"></div>
-					<div class="testimonials-slider-next right-arrow-negative"> <span class="ti-arrow-right"></span> </div>
-					<div class="testimonials-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ Testimonials area end -->	
-	
-	<!-- Add area -->	
-	<div class="p-badd">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="add-area">
-						<a href="#">
-							<div class="effect-add">
-								<img class="img-responsive" alt=" " src="img/add4.png">
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--/ Add area end-->	
-	
-	<!-- counter section -->	
-	<section class="text-center shadow section section-min">
-		<div class="about-counter" id="about-counter">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-3 col-sm-3 cnt1 about-counter-single">
-						<div class="counter"> <span class="fa fa-truck icon"></span>
-							<h2>FREE SHIPPING</h2>
-							<p>Shipping in World for orders over $99</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 cnt2 about-counter-single">
-						<div class="counter"> <span class="ti-gift icon"></span>
-							<h2>SPECIAL GIFT</h2>
-							<p> Give the perfect gift to your loved ones</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 cnt3 about-counter-single">
-						<div class="counter"> <span class="fa fa-money icon"></span>
-							<h2>MONEY BACK</h2>
-							<p>Not receiving an item applied to reward </p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 cnt4 about-counter-single">
-						<div class="counter"> <span class="ti-headphone-alt icon"></span>
-							<h2>Support 24/7</h2>
-							<p> We are wait for you in 24 hours</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>	
-	<!--/ counter section end-->
 	
 	<!-- contact section  -->	
 	<section id="contact" class="contact contact-with-map">
@@ -696,35 +385,8 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-8 col-md-push-1">
-					<div class="contact-form">
-						<form  class="contact-forms" id="contact-form" action="https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/mail.php" method="post">
-							<div class="form-group">
-								<input class="form-control" type="text" name="name" placeholder="Name">
-							</div>
-							<div class="form-group">
-								<input class="form-control" type="email" name="email" placeholder="E-mail">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" name="message" cols="10" rows="7" placeholder="Message"></textarea>
-							</div>
-							<button type="submit" class="btn btn-round btn-g btn btn-primary btn-lg text-center float-right">Submit</button>
-						</form>
-					</div>
-				</div>
 			</div>
-		</div>
-		<!-- Form Message -->
-		<div class="cr-contact-message-modal">
-			<p class="form-messege"></p>
-		</div>
-		<!--// Form Message -->
-		<!-- contact-map -->
-		<div id="contact-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96811.54759587669!2d-74.01263924803828!3d40.6880494567041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays%20Center!5e0!3m2!1sen!2sbd!4v1636195194646!5m2!1sen!2sbd" allowfullscreen loading="lazy"></iframe>
-		</div>
-		<!-- contact-map-end -->
-		
+		</div>		
 	</section>
 	<!--/ contact section  end-->
 
@@ -733,65 +395,9 @@
 		<footer class="footer">
 		 <div class="container">
 			  <div class="row">
-
-				   <div class="col-md-4 col-sm-12">
-					   <div class="f_logo">
-						<a href="#"><img src="img/logo.png" alt="" /></a>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit best shop for you voluptatem.Sed ut perspiciatis unde omnis iste natus errorsit.</p>
-					   </div>
-				   </div>
-
-				   <div class="col-md-4 col-sm-12 info_menu">
-						<h4>INFORMATIONS</h4>
-						<ul>
-							<li><a href="#">  Delivery information </a></li>
-							<li><a href="#">   Privacy Policy </a></li>
-							<li><a href="#">   Terms & Conditions </a></li>
-							<li><a href="#">   Return & Exchange </a></li>
-						</ul>
-						<ul>
-							<li><a href="#">  Free Shipping </a></li>
-							<li><a href="#">   Order Status </a></li>
-							<li><a href="#">   Gift Cards</a></li>
-							<li><a href="#">   International</a></li>
-						</ul>
-				   </div>
-
-				   <div class="col-md-4  col-sm-12">
-					<div class="footer-newsletter">
-						<div class="center">
-							<h4>stay with us</h4>
-							<form action="#" method="post">
-								<div class="input-group">
-									<input class="form-control " type="text" placeholder="e-mail"> 
-									<span class="input-group-btn">
-										<button class="btn btn-default" type="button"><span class="ti-arrow-right"></span></button>
-									</span>
-								</div>
-							</form>
-							<div class="social">
-								<ul>
-									<li class="fndus">Find us here:</li>
-									<li><a href="http://facebook.com/" target="_blank"><span class="ti-facebook"></span></a></li>
-									<li><a href="https://twitter.com/" target="_blank"><span class="ti-twitter-alt"></span></a></li>
-									<li><a href="http://linkedin.com/" target="_blank"><span class="ti-linkedin"></span></a></li>
-									<li><a href="https://vimeo.com/" target="_blank"><span class="ti-vimeo-alt"></span></a></li>
-									<li><a href="http://youtube.com/" target="_blank"><span class="ti-youtube"></span></a></li>
-								</ul>
-							</div>
-							
-						</div>
-					</div>
-
-				   </div>
-
-				   <div class="clearfix col-md-12 col-sm-12">
-						<hr>
-				   </div>
-
-				   <div class="col-md-12 col-sm-12">
+				    <div class="col-md-12 col-sm-12">
 						<div class="footer-copyright">
-							 <p>© 2022 Bestshop - All Rights Reserved.</p>
+							 <p>© 2022 Eskom - All Rights Reserved.</p>
 						</div>
 				   </div>
 				   
@@ -813,6 +419,4 @@
 	<script src="js/main.js"></script>
 </body>
 
-
-<!-- Mirrored from team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Aug 2022 16:49:45 GMT -->
 </html>
